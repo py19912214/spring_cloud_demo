@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka" />
+        <module name="ribbon" />
+        <module name="spring_boot_busi_module" />
+        <module name="spring_boot_node1" />
+        <module name="spring_boot_node2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka" target="1.8" />
+      <module name="ribbon" target="1.6" />
+      <module name="spring_boot_busi_module" target="1.6" />
+      <module name="spring_boot_node1" target="1.6" />
+      <module name="spring_boot_node2" target="1.6" />
+      <module name="spring_cloud_demo" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
