@@ -1,0 +1,11 @@
+eureka:
+  instance:
+#    appname: eureka_client
+#    preferIpAddress: true #用于展示ip
+#    leaseRenewalIntervalInSeconds: 10
+    healthCheckUrlPath: /node/health
+#    metadataMap:
+#      instanceId: eureka_client2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10110/eureka/
