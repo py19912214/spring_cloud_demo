@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = "com")
 public class HystrixApplication {
     public static void main(String[] args) {
+        //启动类
         SpringApplication.run(HystrixApplication.class, args);
     }
 }
