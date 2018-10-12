@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: spring-boot-node #用于在eureka展示名字
-server:
-  port: 10101
-  context-path: /node
-ribbon:
-  eureka:
-    enabled: true
