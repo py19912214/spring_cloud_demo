@@ -15,6 +15,7 @@
         <module>ribbon</module>
         <module>spring_boot_busi_module</module>
         <module>feign</module>
+        <module>spring_boot_hystrix</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
