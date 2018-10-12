@@ -10,8 +10,6 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
  * @author: yuepan
  * @date: 2018/10/12
  */
-@EnableFeignClients
-@EnableCircuitBreaker
 @SpringBootApplication(scanBasePackages = "com")
 public class HystrixApplication {
     public static void main(String[] args) {
