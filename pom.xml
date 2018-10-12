@@ -14,6 +14,7 @@
         <module>eureka</module>
         <module>ribbon</module>
         <module>spring_boot_busi_module</module>
+        <module>feign</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -55,5 +56,16 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Brixton.SR5</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

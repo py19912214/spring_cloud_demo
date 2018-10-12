@@ -4,3 +4,7 @@ spring:
 server:
   port: 10100
   context-path: /node
+#如果不配置这个 会导致市容feign的时候 找不到 服务
+ribbon:
+  eureka:
+    enabled: true
