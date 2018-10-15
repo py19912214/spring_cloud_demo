@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 public class HystrixController {
-    Logger logger = LoggerFactory.getLogger(this.getClass());
     @RequestMapping(value = "/query", method = RequestMethod.GET)
     @HystrixCommand(
             fallbackMethod = "queryFallback",
@@ -28,14 +27,14 @@ public class HystrixController {
                     @HystrixProperty(name = "maxQueueSize", value = "100"),
                     @HystrixProperty(name = "queueSizeRejectionThreshold", value = "20")},
             commandProperties = {
-                    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000"), //命令执行超时时间
+                    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "6000"), //命令执行超时时间
                     @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "2"), //若干10s一个窗口内失败三次, 则达到触发熔断的最少请求量
                     @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "30000") //断路30s后尝试执行, 默认为5s
             })
     public String query(String name) throws InterruptedException {
         //do something
         System.out.println("query:"+name);
-        Thread.sleep(4000);
+//        Thread.sleep(4000);
         return "ok:"+name;
     }
     public String queryFallback(String name){

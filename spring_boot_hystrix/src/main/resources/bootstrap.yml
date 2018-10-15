@@ -1,3 +1,10 @@
 server:
   port: 10200
   context-path: /hystrix
+spring:
+  application:
+    name: spring-boot-hystrix
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10110/eureka/
