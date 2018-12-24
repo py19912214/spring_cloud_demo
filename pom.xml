@@ -17,6 +17,7 @@
         <module>feign</module>
         <module>spring_boot_hystrix</module>
         <module>zuul</module>
+        <module>consul</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
